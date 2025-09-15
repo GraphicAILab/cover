@@ -9,7 +9,7 @@ import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
 	title: "Graphic AI Lab",
-	subtitle: "test",
+	subtitle: "Graphic AI Lab",
 	lang: "en", // Language code, e.g. 'en', 'zh_CN', 'ja', etc.
 	themeColor: {
 		hue: 250, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
@@ -44,6 +44,9 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Home,
 		LinkPreset.Archive,
 		LinkPreset.About,
+		LinkPreset.contact_us,
+		LinkPreset.join_us,
+
 		{
 			name: "GitHub",
 			url: "https://github.com/GraphicAILab", // Internal links should not include the base path, as it is automatically added
@@ -55,7 +58,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/cover.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "Graphic AI Lab",
-	bio: "定格在那一瞬间的你，触及那个遥不可及的她，缥缈而没醒来的梦",
+	bio: "Committed to making AI as controllable and usable as possible.",
 	links: [
 		// {
 		// 	name: "Twitter",

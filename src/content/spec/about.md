@@ -1,9 +1,7 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+[Graphic AI Lab](https://github.com/GraphicAILab), founded in Auckland, New Zealand, is a research laboratory focused on artificial-intelligence technologies. We also conduct work in computer graphics and computer vision. Our current mission is to develop controllable AI, with an emphasis on multimodal models. The vast majority of our research and results will be released as open source.
 
-::github{repo="saicaca/fuwari"}
+Our present work centers on quantitatively controlling the viewpoint of generative models. By making the camera pose explicitly measurable, we aim to render the entire pipeline more controllable and reproducible, with direct applications in film & TV production, game development, and industrial modeling/drafting.
+::github{repo="sodabreak/PoseCtrl"}
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+![background](112097470_p0.jpg)
