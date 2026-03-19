@@ -21,6 +21,24 @@ Focus on multimodal AI models, especially at the intersection of computer graphi
 Overseas applicants are welcome; we provide visa-assistance for qualified candidates.
 :::
 
+## AI system software engineer
+Primary responsibilities include developing AI-related platforms and tools, as well as deploying various AI models into production systems.
+
+### Requirements:
+- Experience in local AI model deployment and AI engineering architecture, with development experience in both front-end and back-end.
+- Thorough understanding of AI models, especially LLMs and multimodal models.
+- Basic understanding of AI engineering and core frameworks, such as LangChain and ChainGraph.
+- At least one year of relevant development experience.
+- Proficient in Chinese and English.
+
+### We can provide:
+- Remote work most of the time  
+- Visa support (work visa & PR pathway)
+
+:::note
+Overseas applicants are welcome; we provide visa-assistance for qualified candidates.
+:::
+
 ## AI Research Intern
 Mainly assist researchers in R&D tasks.
 
