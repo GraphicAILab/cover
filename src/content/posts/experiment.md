@@ -1,5 +1,5 @@
 ---
-title: 一些关于多模态模型生成的可控研究和思考
+title: 关于多模态生成的实验
 published: 2025-12-24
 tags: [Blogging]
 category: Experiments
