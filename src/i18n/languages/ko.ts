@@ -2,9 +2,12 @@ import Key from "../i18nKey";
 import type { Translation } from "../translation";
 
 export const ko: Translation = {
-	[Key.home]: "홈",
+	[Key.home]: "블로그",
 	[Key.about]: "소개",
 	[Key.archive]: "아카이브",
+	[Key.contact_us]: "문의하기",
+	[Key.join_us]: "합류하기",
+	[Key.product]: "제품",
 	[Key.search]: "검색",
 
 	[Key.tags]: "태그",

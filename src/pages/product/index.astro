@@ -1,0 +1,74 @@
+---
+import { getEntry, render } from "astro:content";
+import Markdown from "@components/misc/Markdown.astro";
+import I18nKey from "../../i18n/i18nKey";
+import { i18n } from "../../i18n/translation";
+import MainGridLayout from "../../layouts/MainGridLayout.astro";
+
+const productPost = await getEntry("spec", "product");
+if (!productPost) {
+    throw new Error("Product page content not found");
+}
+const { Content } = await render(productPost);
+
+const base = import.meta.env.BASE_URL;
+const img3d = `${base}assets/images/result.png`;
+const imgAi = `${base}assets/images/simulation.png`;
+const videoSrc = `${base}assets/videos/render.mp4`;
+
+const products = [
+    {
+        title: "3D Generation",
+        slug: "3d-model",
+        description: "We utilize generative 3D AI to transform images into tailored 3D assets. Users can generate corresponding 3D content from text descriptions, single images, or multi-view images—significantly boosting efficiency over traditional workflows. Today, our assets power key sectors including gaming, VFX, VR/AR, robotics, and autonomous driving.",
+        media: "image",
+        src: img3d,
+        alt: "3D Generation Tool",
+    },
+    {
+        title: "Rendering & Interactive Products",
+        slug: "rendering",
+        description: "As the bedrock of modern 3D vision, real-time and offline rendering drive today's visual experiences. Our track record spans the development of various games and VR/AR projects, alongside simulation for embodied AI and autonomous driving. Additionally, multi-stylized rendering remains a cornerstone across the VFX, advertising, and gaming industries.",
+        media: "video",
+        src: videoSrc,
+        alt: "Rendering Demo",
+    },
+    {
+        title: "AI-Powered Automation",
+        slug: "ai-automation",
+        description: "AI-driven workflow tools are now vital auxiliary assets in numerous niche markets. A prime example is our custom solution for bidding document management and report generation, which greatly simplifies the bidding process by tackling challenges like document redundancy, highly repetitive submission materials, and overwhelming amounts of text.Simultaneously, we are actively deploying our solutions onto physical hardware, such as agricultural machinery and sorting robots.",
+        media: "image",
+        src: imgAi,
+        alt: "AI Automation Products",
+    },
+];
+---
+<MainGridLayout title={i18n(I18nKey.product)} description={i18n(I18nKey.product)}>
+    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
+        <div class="card-base z-10 px-9 py-6 relative w-full">
+            <Markdown class="mt-2">
+                <Content />
+            </Markdown>
+
+            <div class="grid gap-8 mt-8">
+                {products.map((p) => (
+                    <a href={`${base}product/${p.slug}/`} class="flex flex-col md:flex-row gap-6 rounded-xl border border-[var(--line-divider)] p-5 transition hover:shadow-lg hover:border-[var(--btn-primary)] cursor-pointer no-underline text-inherit">
+                        <div class="w-full md:w-1/2 shrink-0 overflow-hidden rounded-lg flex items-center justify-center bg-[var(--card-bg)]">
+                            {p.media === "video" ? (
+                                <video width="100%" height="auto" preload="metadata" class="rounded-lg pointer-events-none">
+                                    <source src={p.src} type="video/mp4" />
+                                </video>
+                            ) : (
+                                <img src={p.src} alt={p.alt} class="max-w-full max-h-full w-auto h-auto rounded-lg object-contain" loading="lazy" />
+                            )}
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <h3 class="text-2xl font-bold mb-3">{p.title}</h3>
+                            <p class="text-[var(--text-secondary)] leading-relaxed">{p.description}</p>
+                        </div>
+                    </a>
+                ))}
+            </div>
+        </div>
+    </div>
+</MainGridLayout>

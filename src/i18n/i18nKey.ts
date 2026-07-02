@@ -4,6 +4,7 @@ enum I18nKey {
 	archive = "archive",
 	contact_us = "contact_us",
 	join_us = "join_us",
+	product = "product",
 	search = "search",
 
 	tags = "tags",

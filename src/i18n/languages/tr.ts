@@ -2,9 +2,12 @@ import Key from "../i18nKey";
 import type { Translation } from "../translation";
 
 export const tr: Translation = {
-	[Key.home]: "Anasayfa",
+	[Key.home]: "Blog",
 	[Key.about]: "Hakkında",
 	[Key.archive]: "Arşiv",
+	[Key.contact_us]: "İletişim",
+	[Key.join_us]: "Bize Katılın",
+	[Key.product]: "Ürün",
 	[Key.search]: "Ara",
 
 	[Key.tags]: "Taglar",
