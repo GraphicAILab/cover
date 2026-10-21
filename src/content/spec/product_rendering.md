@@ -14,7 +14,7 @@ We offer comprehensive rendering solutions and interactive product development.
 ### Demo video
 
 <video width="100%" height="auto" controls preload="metadata" class="rounded-lg my-6">
-  <source src="/cover/assets/videos/render.mp4" type="video/mp4" />
+  <source src="/assets/videos/render.mp4" type="video/mp4" />
 </video>
 
 ### Game & VR & AR
