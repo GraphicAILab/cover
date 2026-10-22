@@ -52,7 +52,7 @@ const products = [
 
             <div class="grid gap-8 mt-8">
                 {products.map((p) => (
-                    <a href={`${base}product/${p.slug}/`} class="flex flex-col md:flex-row gap-6 rounded-xl border border-[var(--line-divider)] p-5 transition hover:shadow-lg hover:border-[var(--btn-primary)] cursor-pointer no-underline text-inherit">
+                    <a href={`${base}product/${p.slug}/`} class="flex flex-col md:flex-row gap-6 rounded-xl border border-[var(--line-divider)] p-5 transition hover:shadow-lg hover:border-[var(--primary)] cursor-pointer no-underline text-inherit">
                         <div class="w-full md:w-1/2 shrink-0 overflow-hidden rounded-lg flex items-center justify-center bg-[var(--card-bg)]">
                             {p.media === "video" ? (
                                 <video width="100%" height="auto" preload="metadata" class="rounded-lg pointer-events-none">

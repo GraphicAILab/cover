@@ -117,5 +117,10 @@
         overflow-x: auto;
         margin: 1em 0;
     }
-    
+
+    .katex-display {
+        max-width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
 }

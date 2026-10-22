@@ -111,6 +111,12 @@ const bannerOffset =
 
 		<!-- Set the theme before the page is rendered to avoid a flash -->
 		<script is:inline define:vars={{DEFAULT_THEME, LIGHT_MODE, DARK_MODE, AUTO_MODE, BANNER_HEIGHT_EXTEND, PAGE_WIDTH, configHue}}>
+			// One-time cleanup if theme was erroneously locked to dark
+			if (!localStorage.getItem('theme_initialized')) {
+				localStorage.removeItem('theme');
+				localStorage.setItem('theme_initialized', 'true');
+			}
+
 			// Load the theme from local storage
 			const theme = localStorage.getItem('theme') || DEFAULT_THEME;
 			switch (theme) {

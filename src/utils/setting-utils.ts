@@ -53,6 +53,7 @@ export function applyThemeToDocument(theme: LIGHT_DARK_MODE) {
 
 export function setTheme(theme: LIGHT_DARK_MODE): void {
 	localStorage.setItem("theme", theme);
+	localStorage.setItem("theme_initialized", "true");
 	applyThemeToDocument(theme);
 }
 

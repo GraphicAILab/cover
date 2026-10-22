@@ -13,24 +13,24 @@ We present a generative 3D model capable of generating corresponding 3D models a
 
 ## Feature Example
 
-<div class="flex items-center gap-4 my-6">
-  <div class="flex-1 text-center">
+<div class="flex flex-col md:flex-row items-center gap-4 my-6">
+  <div class="w-full md:flex-1 text-center">
     <img src="/assets/images/input.png" alt="Input" class="w-full rounded-lg" />
-    <p class="text-black text-sm mt-2 font-bold">Input Image</p>
+    <p class="text-black/80 dark:text-white/80 text-sm mt-2 font-bold">Input Image</p>
   </div>
-  <div class="text-black text-4xl font-bold">→</div>
-  <div class="flex-[3] grid grid-cols-3 gap-4">
+  <div class="text-black/60 dark:text-white/60 text-2xl md:text-4xl font-bold rotate-90 md:rotate-0">→</div>
+  <div class="w-full md:flex-[3] grid grid-cols-1 sm:grid-cols-3 gap-4">
     <div class="text-center">
       <img src="/assets/images/generate_model.png" alt="Generate Model" class="w-full rounded-lg" />
-      <p class="text-black text-sm mt-2 font-bold">Generate Model</p>
+      <p class="text-black/80 dark:text-white/80 text-sm mt-2 font-bold">Generate Model</p>
     </div>
     <div class="text-center">
       <img src="/assets/images/normal.png" alt="Normal" class="w-full rounded-lg" />
-      <p class="text-black text-sm mt-2 font-bold">Normal</p>
+      <p class="text-black/80 dark:text-white/80 text-sm mt-2 font-bold">Normal</p>
     </div>
     <div class="text-center">
       <img src="/assets/images/result.png" alt="Result" class="w-full rounded-lg" />
-      <p class="text-black text-sm mt-2 font-bold">Result</p>
+      <p class="text-black/80 dark:text-white/80 text-sm mt-2 font-bold">Result</p>
     </div>
   </div>
 </div>
